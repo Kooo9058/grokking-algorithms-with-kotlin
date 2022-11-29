@@ -5,7 +5,7 @@
 Бинарный поиск работает по следующему принципу:
 - Массив делится пополам. Значение элемента в середине массива, берётся за опорный.
 
-![binary_searching_one](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/image/imageBinaryOne.png)
+![binary_searching_one](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/src/main/image/imageBinaryOne.png)
 - Дальше мы сравниваем значение опорного элемента со значением элементра, который необзодимо найти.
 - Если значение опорного элемента меньше, то левая часть массива отбрасывается и за исходный берётся правая часть массива и наоборот.
 - После задание новых границ исходного мыссива, после чего всё шаги повторяются, до тех пор, пока значение опорного элемента не будет равно значению искомого.
