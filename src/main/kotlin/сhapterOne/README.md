@@ -6,8 +6,9 @@
 - Массив делится пополам. Значение элемента в середине массива, берётся за опорный.
 ![binary_searching_one](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/src/main/image/imageBinaryOne.png)
 - Дальше мы сравниваем значение опорного элемента со значением элементра, который необзодимо найти.
-![binary_searching_one](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/src/main/image/imageBinaryTwo.png)
+![binary_searching_two](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/src/main/image/imageBinaryTwo.png)
 - Если значение опорного элемента меньше, то левая часть массива отбрасывается и за исходный берётся правая часть массива и наоборот.
+![binary_searching_tree](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/src/main/image/imageBinaryThree.png)
 - После задание новых границ исходного мыссива, после чего всё шаги повторяются, до тех пор, пока значение опорного элемента не будет равно значению искомого.
 
 Из-за того, что мы сравниваем значение опорного элемента и искомого, вытекает необходимое условие сортировки массива.
