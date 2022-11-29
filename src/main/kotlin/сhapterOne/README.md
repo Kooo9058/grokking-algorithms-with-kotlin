@@ -18,3 +18,4 @@
 За счёт того, что бинарный поиск откидывает половину массива за каждую итерацию, скорость такого алгоритма O(log(n)),
 в то время как скорость обычного поиска линейна O(log(n)). Другими словами, при увеличении размера массива линейному поиску потребуется
 проверить все элементы, а бинарному намного меньше.
+![binary_searching_four](https://github.com/Kooo9058/grokking-algorithms-with-kotlin/raw/test-add-readme-for-chapterOne/src/main/image/graphicsFunctionsSearchingOne.png)
