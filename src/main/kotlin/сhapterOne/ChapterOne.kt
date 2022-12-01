@@ -48,4 +48,5 @@ class SearchingAlgorithms(private val list: List<Int>): CounterOperations() {
         }
         return -1
     }
+//    fun linealSearchingItemsIndex(item: Int): Int = list.find { it == item } ?: -1
 }
