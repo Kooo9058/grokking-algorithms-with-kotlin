@@ -81,7 +81,7 @@ if (list[i] == item) {
     return i
 }
 ```
-## Фишки Kotlin
+## Метод find
 Одна из фишек, это сахар для работы с коллекциями, который позволяет сокращать код и делает его более понятным.
 Можно упростить код при линейном поиске, например:
 ```kotlin
@@ -96,10 +96,20 @@ public inline fun <T> Iterable<T>.find(predicate: (T) -> Boolean): T? {
     return firstOrNull(predicate)
 }
 ```
-Который в свою очередь создает обычный линейный поиск и поиск элемента по предикату.
+Который в свою очередь создает обычный линейный поиск и поиск элемента по предикату и возвращает первый найденный элемент.
 ```kotlin
 public inline fun <T> Iterable<T>.firstOrNull(predicate: (T) -> Boolean): T? {
     for (element in this) if (predicate(element)) return element
     return null
+}
+```
+
+## Метод forEachIndexed
+Хотелось бы еще рассказать про этот метод, он позволяет сразу итеритовать элементы массива и получать текущий индекс.
+Поэтому наш метод линейного поиска можно переписать, например:
+```kotlin
+fun linealSearchingItemsIndex1(item: Int): Int {
+    list.forEachIndexed { index, i -> if (i == item) return index }
+    return -1
 }
 ```
